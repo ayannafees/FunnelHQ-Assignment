@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Include external CSS file -->
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <!-- Include Font Awesome CSS library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <!-- Set the viewport for responsive design -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <!-- Outer container -->
+  <div class="container-outer">
+    <!-- Heading -->
+    <h2 class="heading">Drag and Drop Game</h2>
+    <!-- Inner container -->
+    <div class="container-inner">
+      <!-- Target container where items can be dropped -->
+      <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <img src="bird.jpg" height="50px" width="45.6px" draggable="true" ondragstart="drag(event)" id="drag1">
+        <p draggable="true" ondragstart="drag(event)" id="drag2">Drag Me</p>
+        <i class="fas fa-cloud" style="color: #1893f2" draggable="true" ondragstart="drag(event)" id="drag3"></i>
+      </div>
+       <!-- Container where items can be dropped and dragged from-->
+      <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    </div>
+    <!-- Button to reset the game -->
+    <button onclick="resetDivs()">Reset</button>
+  </div>
+   <!-- Include external JavaScript file -->
+  <script src="scripts.js"></script>
+</body>
+</html>

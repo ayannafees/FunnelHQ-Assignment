@@ -1,0 +1,135 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* Outer container */
+.container-outer {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+
+  /* Background image */
+  background-image: url('background_image.avif');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+/* Heading style */
+.heading {
+  padding-top: 14vh;
+  margin-bottom: 10vh;
+  font-size: 48px;
+  color: #ff0000;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  background: linear-gradient(to right, #ff0000, #026702);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Inner container */
+.container-inner {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10vh;
+  margin: 20px;
+}
+
+/* Styling for div1 and div2 */
+#div1, #div2 {
+  width: 30vw;
+  height: 30vh;
+  padding: 10px;
+  margin: 10px;
+  border: 2px solid #333;
+  border-radius: 10px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  background-color: #f9f9f9;
+  color: #333;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Hover effect on div1 and div2 */
+#div1:hover, #div2:hover {
+  border-color: #ff9900;
+  background-color: #fff;
+  color: #ff9900;
+}
+
+/* Styling for the image inside div1 */
+#div1 img {
+  width: 50px;
+  height: 50px;
+}
+
+/* Styling for the paragraph inside div1 */
+#div1 p {
+  margin: 5px;
+}
+
+/* Styling for the icon inside div1 */
+#div1 i {
+  margin: 5px;
+}
+
+/* Styling for the button */
+button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Hover effect on the button */
+button:hover {
+  background-color: white;
+  color: #4CAF50;
+  border: 1px solid #4CAF50;
+}
+
+/* Media queries for responsive design */
+@media only screen and (max-width: 768px) {
+  /* Decrease the font size of the heading */
+  .heading {
+    font-size: 36px;
+  }
+
+  /* Adjust the width and height of div1 and div2 */
+  #div1,
+  #div2 {
+    width: 40vw;
+    height: 20vh;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  /* Decrease the font size of the heading further */
+  .heading {
+    font-size: 30px;
+  }
+
+  /* Adjust the width, height, padding, and margin of div1 and div2 */
+  #div1,
+  #div2 {
+    width: 30vw;
+    height: 30vh;
+    padding: 10px;
+    margin: 10px;
+  }
+}
